@@ -24,7 +24,7 @@ public class MainActivity2_question5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity2_question5);
         //
-        this.chargerList("suffixe");
+        this.chargerList("- Bretagne");
         //
         listViewRegion=(ListView) findViewById(R.id.listview);
         listViewRegionAdapter = new ArrayAdapter<String>(this, androidx.constraintlayout.widget.R.layout.support_simple_spinner_dropdown_item,listeRegion);
@@ -39,8 +39,8 @@ public class MainActivity2_question5 extends AppCompatActivity {
     //Methode qui remplie la liste des regions avec le nom des cinq regions bretonne
     private void chargerList(String suffixe){
         //
-        String[] liste = {"Rennes","Saint Malo","saint gregore"};
+        String[] liste = {"Côtes-d'Armor","Finistère","Ille-et-Vilaine","Morbihan"};
         //
-        for(String item:liste){listeRegion.add(suffixe+item);}
+        for(String item:liste){listeRegion.add(item+suffixe);}
     }
 }
