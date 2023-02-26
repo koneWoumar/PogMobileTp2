@@ -32,7 +32,7 @@ public class MainActivity2_question7 extends AppCompatActivity {
         this.chargerList("- Bretagne");
         //
         listViewRegion = (ListView) findViewById(R.id.listview);
-        listViewRegionAdapter = new ArrayAdapter<String>(this, androidx.constraintlayout.widget.R.layout.support_simple_spinner_dropdown_item, listeRegion);
+        listViewRegionAdapter = new ArrayAdapter<String>(this, R.layout.item_template,R.id.textView,listeRegion);
         listViewRegion.setAdapter(listViewRegionAdapter);
         //rendre les items clickable
         listViewRegion.setOnItemClickListener((parent, view, position, id) -> {
